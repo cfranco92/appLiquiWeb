@@ -1,0 +1,7 @@
+{
+  "name": "appLiquidacion",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
