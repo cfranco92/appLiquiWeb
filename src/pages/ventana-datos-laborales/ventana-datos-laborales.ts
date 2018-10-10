@@ -46,23 +46,23 @@ export class VentanaDatosLaboralesPage {
     var diasLaborados: number = this.cliente.diasLaborados;
     // PRIMA
     var prima = (salarioBase * (diasLaborados)/180) / 360;
-    this.cliente.prima = Math.trunc(prima);
+    this.cliente.prima = Math.trunc(prima).toString().split('').reverse().join('').replace(/(?=\d*\.?)(\d{3})/g,'$1.').split('').reverse().join('').replace(/^[\.]/,'');
     // CESANTIA
     var cesantia = (salarioBase * diasLaborados) / 360;
-    this.cliente.cesantia = Math.trunc(cesantia);
+    this.cliente.cesantia = Math.trunc(cesantia).toString().split('').reverse().join('').replace(/(?=\d*\.?)(\d{3})/g,'$1.').split('').reverse().join('').replace(/^[\.]/,'');
     // I CESANTIA
     var icesantia = (cesantia * diasLaborados * 0.12) / 360;
-    this.cliente.icesantia = Math.trunc(icesantia);
+    this.cliente.icesantia = Math.trunc(icesantia).toString().split('').reverse().join('').replace(/(?=\d*\.?)(\d{3})/g,'$1.').split('').reverse().join('').replace(/^[\.]/,'');
     // VACACIONES
     var vacaciones = (salarioBase * diasLaborados) / 720;
-    this.cliente.vacaciones = Math.trunc(vacaciones);
+    this.cliente.vacaciones = Math.trunc(vacaciones).toString().split('').reverse().join('').replace(/(?=\d*\.?)(\d{3})/g,'$1.').split('').reverse().join('').replace(/^[\.]/,'');
     // INDEMNIZACIÓN FIJO    
     var indemnizacionFijo: number = 0;
     var diasFaltantes: number = this.cliente.diasFaltantes;
     var smlmv: number = 781242;
     var sdlv: number = 26041;
     indemnizacionFijo = diasFaltantes * sdlv;
-    this.cliente.indemnizacionFijo = Math.trunc(indemnizacionFijo);
+    this.cliente.indemnizacionFijo = Math.trunc(indemnizacionFijo).toString().split('').reverse().join('').replace(/(?=\d*\.?)(\d{3})/g,'$1.').split('').reverse().join('').replace(/^[\.]/,'');
     // INDEMNIZACIÓN INDEFINIDO                 MIRAR BIEN ESTA PARTE
     var indemnizacionIndefinido: number = 0;
     var añosTrabajados = diasLaborados / 360; // Evaluar bien
@@ -92,9 +92,9 @@ export class VentanaDatosLaboralesPage {
         }
       }      
     }
-    this.cliente.indemnizacionIndefinido = Math.trunc(indemnizacionIndefinido);
+    this.cliente.indemnizacionIndefinido = Math.trunc(indemnizacionIndefinido).toString().split('').reverse().join('').replace(/(?=\d*\.?)(\d{3})/g,'$1.').split('').reverse().join('').replace(/^[\.]/,'');
     var result: number = prima + cesantia + icesantia + vacaciones + indemnizacionFijo + indemnizacionIndefinido;
-    this.cliente.total = Math.trunc(result);    
+    this.cliente.total = Math.trunc(result).toString().split('').reverse().join('').replace(/(?=\d*\.?)(\d{3})/g,'$1.').split('').reverse().join('').replace(/^[\.]/,'');    
   }
 
   irVentanaCalculadora(cliente){

@@ -28,15 +28,16 @@
     <ion-item>
       <ion-label floating>Apellidos</ion-label>
       <ion-input type="text" [(ngModel)]="cliente.apellidos"></ion-input>
-    </ion-item>    
-    <!-- Genero -->
+    </ion-item> 
+    <!-- CÉDULA    -->
     <ion-item>
-      <ion-label>Género</ion-label>
-      <ion-select [(ngModel)]="cliente.genero">
-        <ion-option value="Masculino">Masculino</ion-option>
-        <ion-option value="Femenino">Femenino</ion-option>
-        <ion-option value="Otro">Otro</ion-option>
-      </ion-select>
+      <ion-label floating>Cédula</ion-label>
+      <ion-input type="text" [(ngModel)]="cliente.documento"></ion-input>
+    </ion-item>
+    <!-- TELÉFONO     -->
+    <ion-item>
+      <ion-label floating>Teléfono</ion-label>
+      <ion-input type="text" [(ngModel)]="cliente.telefono"></ion-input>
     </ion-item>    
   </ion-list>
   <button ion-button full (click)="irVentanaDatosLaborales(cliente)">Datos Laborales</button>
