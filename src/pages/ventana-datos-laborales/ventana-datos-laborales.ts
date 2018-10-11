@@ -1,7 +1,6 @@
 import { PantallaCalculadoraPage } from './../pantalla-calculadora/pantalla-calculadora';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { PARAMETERS } from '@angular/core/src/util/decorators';
 
 /**
  * Generated class for the VentanaDatosLaboralesPage page.

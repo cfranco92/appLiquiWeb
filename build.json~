@@ -1,0 +1,18 @@
+{
+  "android": {
+         "debug": {
+             "keystore": "appLiquiWeb.keystore",
+             "storePassword": "alejandro",
+             "alias": appLiquiWeb",
+             "password" : "alejandro",
+             "keystoreType": ""
+         },
+         "release": {
+             "keystore": "appLiquiWeb.keystore",
+             "storePassword": "alejandro",
+             "alias": "appLiquiWeb",
+             "password" : "alejandro",
+             "keystoreType": ""
+         }
+     }
+ }

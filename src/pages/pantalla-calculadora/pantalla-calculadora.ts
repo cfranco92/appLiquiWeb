@@ -1,4 +1,3 @@
-import { VentanaDatosLaboralesPage } from './../ventana-datos-laborales/ventana-datos-laborales';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 

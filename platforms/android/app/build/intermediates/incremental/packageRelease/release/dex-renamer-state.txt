@@ -1,0 +1,4 @@
+#Wed Oct 10 16:48:05 COT 2018
+base.0=/Users/cristianfranco/Documents/universidad/appLiquiWeb/platforms/android/app/build/intermediates/transforms/dex/release/0
+renamed.0=classes.dex
+file.0=/Users/cristianfranco/Documents/universidad/appLiquiWeb/platforms/android/app/build/intermediates/transforms/dex/release/0/classes.dex
